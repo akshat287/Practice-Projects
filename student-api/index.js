@@ -86,7 +86,7 @@ app.delete('/api/student/:id', async(req,res)=>{
 })
 
 
-mongoose.connect("mongodb+srv://StudentUser:Dgw592Hd17AjDXHL@backenddb.cuktp8u.mongodb.net/Student-API?retryWrites=true&w=majority&appName=backendDB")
+mongoose.connect("mongodb+srv://<username>:<password>@<clusterName>.mongodb.net/<databaseName>?retryWrites=true&w=majority")
 .then(()=>{
     console.log("connected to database!");
     app.listen(3001,()=>{
@@ -95,4 +95,5 @@ mongoose.connect("mongodb+srv://StudentUser:Dgw592Hd17AjDXHL@backenddb.cuktp8u.m
 })
 .catch(()=>{
     console.log("Connection failed!");
+
 })
