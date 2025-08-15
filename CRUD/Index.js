@@ -89,7 +89,7 @@ app.get('/',(req,res)=>{
 
 
 
-mongoose.connect("mongodb+srv://tiwariakshat101:2rUefA4ELafIkyTl@backenddb.4nucebp.mongodb.net/Node-api?retryWrites=true&w=majority&appName=backendDB")
+mongoose.connect("mongodb+srv://<username>:<password>@<clusterName>.net/Node-api?retryWrites=true&w=majority&appName=backendDB")
 .then(()=>{
     console.log("connected to database!")
 })
@@ -99,4 +99,5 @@ mongoose.connect("mongodb+srv://tiwariakshat101:2rUefA4ELafIkyTl@backenddb.4nuce
 
 app.listen(3000,()=>{
     console.log('Server is running')
+
 });
