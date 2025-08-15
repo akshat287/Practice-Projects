@@ -13,12 +13,13 @@ public class CP {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		
 		//create the connection
-		String user="root";
-		String password="root";
-		String url="jdbc:mysql://localhost:3306/student_management";
+		String user=""; // mysql user name
+		String password=""; // password of mysql
+		String url="jdbc:mysql://localhost:3306/{name_database}";
 		con=DriverManager.getConnection(url,user,password);
 		
 		return con;
 		
 	}
 }
+
